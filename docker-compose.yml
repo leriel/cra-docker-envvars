@@ -3,7 +3,6 @@ services:
   login_app:
       image: node:9.11.1-alpine
       env_file: [./dev.env]
-      environment: [VIRTUAL_HOST=login_app.dev.local]
       volumes: [".:/app"]
       working_dir: /app
       command: npm run build
